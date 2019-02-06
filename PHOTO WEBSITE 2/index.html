@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<div id="pagefade">
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>home</title>
+<link rel="shortcut icon" type="image/jpg" href="camsymbol3.jpg" />
+<link rel="stylesheet" type="text/css" href="css.css"/>
+<style type="text/css">
+</style>
+</head>
+
+<body id="body">
+<h1 id="head1" class="auto-style1">north star photography</h1>
+<nav id="nav">
+	<span class="auto-style4">
+	<a href="index.html">home</a></span> <br/>
+	<br/>
+	<a href="gallery.html">gallery</a><br/>
+	<br class="auto-style4" />
+	<span class="auto-style4">
+	<a href="moreinfo.html">more information</a><br />
+	&nbsp;<br/>
+	<a href="resources.html">resources</a></span></nav>
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<h2>Automatic Slideshow</h2>
+<p>Change image every 2 seconds:</p>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="photo2wcar.jpg" style="width:100%"/>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="bluewtrees.jpg" style="width:90%"/>
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="photo1wcar.jpg" style="width:90%"/>
+  <div class="text"></div>
+</div>
+
+</div>
+<br/>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot" style="right: 504px"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 4000); // Change image every 4 seconds
+}
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</html>
